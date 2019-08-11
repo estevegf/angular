@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { ApiService } from './api.service';
-import { catchError, map, tap } from 'rxjs/operators';
+import { catchError, tap } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
 
 @Injectable()
@@ -20,7 +20,7 @@ export class EducationResolver implements Resolve<any> {
         catchError(error => {
           const message = `Retrieval error: ${error}`;
           console.error(message);
-          return of({ product: null, error: message });
+          return of({ product: null });
         })
       );
   }
