@@ -5,10 +5,12 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from './services/api.service';
 import { EducationResolver } from './services/education.resolver';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    BannerComponent
   ],
   imports: [
     RouterModule,
@@ -16,7 +18,8 @@ import { EducationResolver } from './services/education.resolver';
     HttpClientModule,
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    BannerComponent
   ],
   providers: []
 })
