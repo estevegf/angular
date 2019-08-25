@@ -1,0 +1,22 @@
+.card {
+  display: inline-flex;
+  width: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.circular {
+  border-radius: 50%;
+  border: 2px solid green;
+  margin: 1em 2em 1em 3em;
+}
+
+@media (max-width: 600px) {
+  .circular {
+    margin: 1em 2em 1em 0;
+  }
+}
+
+ul {
+  padding-left: 0;
+}
