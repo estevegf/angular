@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BaseeducationComponent } from './baseeducation/baseeducation.component';
 import {CoreModule} from '../core/core.module';
+import { CardeducationComponent } from './cardeducation/cardeducation.component';
 
 @NgModule({
   declarations: [
-    BaseeducationComponent
+    BaseeducationComponent,
+    CardeducationComponent
   ],
   imports: [
     CommonModule,

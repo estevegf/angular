@@ -13,7 +13,7 @@ const routes: Routes = [
     path: 'education',
     component: BaseeducationComponent,
     resolve: {
-      stars: EducationResolver
+      education: EducationResolver
     }
   },
 ];

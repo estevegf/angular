@@ -1,7 +1,11 @@
-<div>
-  <app-banner imageUrl="/assets/banner.svg"></app-banner>
-  <div class="container">
-    <h1>Hello Education Angular</h1>
-    <p>Angular have {{stars}} stars on github</p>
+<ng-container *ngIf="education.error == null">
+  <div>
+    <app-banner imageUrl="{{homeBanner}}"></app-banner>
+    <div class="container">
+      <h2>Education</h2>
+      <section *ngFor="let edu of education.product" style="text-align: center">
+        <app-cardeducation [education]="edu"></app-cardeducation>
+      </section>
+    </div>
   </div>
-</div>
+</ng-container>

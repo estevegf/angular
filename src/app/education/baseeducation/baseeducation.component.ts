@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { EducationResolved } from '../../core/models/Education';
 
 @Component({
   selector: 'app-baseeducation',
@@ -7,12 +8,14 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./baseeducation.component.scss']
 })
 export class BaseeducationComponent implements OnInit {
-  stars: number;
+  education: EducationResolved;
+  homeBanner = '/assets/banner.svg';
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.route.data.subscribe(data => this.stars = data.stars.stargazers_count);
+
+    this.route.data.subscribe(data => this.education = data.education);
   }
 
 }
