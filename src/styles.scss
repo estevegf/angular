@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  padding: 1em;
+  padding: 0 1em;
 }
 
 @media (min-width: 600px) {
@@ -44,4 +44,8 @@ body {
 .responsive {
   width: 100%;
   height: auto;
+}
+
+.center {
+  text-align: center;
 }

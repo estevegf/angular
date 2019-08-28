@@ -7,4 +7,5 @@ export class Education {
   school: string;
   img: string;
   age: string;
+  description: string;
 }

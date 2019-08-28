@@ -16,7 +16,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getStars(): Observable< Education []> {
+  getEducation(): Observable< Education []> {
     return this.http.get< Education []>
     ('https://us-central1-tfg2019-ae3f8.cloudfunctions.net/api/education', httpOptions);
   }

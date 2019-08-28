@@ -3,7 +3,7 @@ import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/r
 import { ApiService } from './api.service';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
-import {Education, EducationResolved} from '../models/Education';
+import { EducationResolved } from '../models/Education';
 
 @Injectable()
 export class EducationResolver implements Resolve< EducationResolved > {
@@ -13,7 +13,7 @@ export class EducationResolver implements Resolve< EducationResolved > {
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable< EducationResolved > {
     console.log('Resolve Service Education');
 
-    return this.apiService.getStars()
+    return this.apiService.getEducation()
       .pipe(
         map( product => ({ product, error: null })),
         tap( product => {

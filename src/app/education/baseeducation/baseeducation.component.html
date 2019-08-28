@@ -1,11 +1,11 @@
 <ng-container *ngIf="education.error == null">
-  <div>
-    <app-banner imageUrl="{{homeBanner}}"></app-banner>
-    <div class="container">
-      <h2>Education</h2>
-      <section *ngFor="let edu of education.product" style="text-align: center">
+  <app-banner imageUrl="{{homeBanner}}"></app-banner>
+  <div class="container">
+    <h2>Education</h2>
+    <section class="center">
+      <ng-container *ngFor="let edu of education.product">
         <app-cardeducation [education]="edu"></app-cardeducation>
-      </section>
-    </div>
+      </ng-container>
+    </section>
   </div>
 </ng-container>
