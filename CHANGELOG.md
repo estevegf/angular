@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### [v0.1.0; 28-07-2019]
 
 #### Added
+- 29/08/2019: Responsive layout
+- 29/08/2019: Added Images
+- 29/08/2019: Added Images
+- 29/08/2019: Montserrat Fonts
 - 27/08/2019: Education page
 - 26/08/2019: New component card
 - 25/08/2019: Home page

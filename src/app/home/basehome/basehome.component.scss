@@ -1,20 +1,22 @@
 .card {
   display: inline-flex;
   width: 100%;
-  -webkit-box-align: center;
-  align-items: center;
+  -webkit-box-align: baseline;
+  align-items: baseline;
 }
 
 .circular {
-  border-radius: 50%;
-  border: 2px solid green;
-  margin: 1em 2em 1em 3em;
+  margin: 1em 2em auto 1em;
 }
 
 @media (max-width: 600px) {
   .circular {
-    margin: 1em 2em 1em 0;
+    width: 80px;
   }
+}
+
+p {
+  text-align: justify;
 }
 
 ul {

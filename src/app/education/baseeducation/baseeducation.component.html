@@ -1,7 +1,7 @@
 <ng-container *ngIf="education.error == null">
-  <app-banner imageUrl="{{homeBanner}}"></app-banner>
+  <app-banner imageUrl="{{educationBanner}}"></app-banner>
   <div class="container">
-    <h2>Education</h2>
+    <h1>Education</h1>
     <section class="center">
       <ng-container *ngFor="let edu of education.product">
         <app-cardeducation [education]="edu"></app-cardeducation>

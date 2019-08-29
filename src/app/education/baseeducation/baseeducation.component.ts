@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 import { EducationResolved } from '../../core/models/Education';
 
 @Component({
@@ -9,9 +10,11 @@ import { EducationResolved } from '../../core/models/Education';
 })
 export class BaseeducationComponent implements OnInit {
   education: EducationResolved;
-  homeBanner = '/assets/banner.svg';
+  educationBanner = '/assets/banner_education.jpg';
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private titleService: Title ) {
+    this.titleService.setTitle('Education - Angular');
+  }
 
   ngOnInit() {
 
