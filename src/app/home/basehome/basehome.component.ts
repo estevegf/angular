@@ -7,7 +7,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./basehome.component.scss']
 })
 export class BasehomeComponent implements OnInit {
-  homeBanner = '/assets/banner_home.jpg';
+  homeBanner = '/assets/banner_home-1920.webp';
   experienceOne = '/assets/experience-funitec.svg';
   experienceTwo = '/assets/experience-uniks.svg';
 

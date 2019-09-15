@@ -11,17 +11,11 @@ export class EducationResolver implements Resolve< EducationResolved > {
   constructor(private apiService: ApiService) {}
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable< EducationResolved > {
-    console.log('Resolve Service Education');
-
     return this.apiService.getEducation()
       .pipe(
         map( product => ({ product, error: null })),
-        tap( product => {
-          console.log(product);
-        }),
         catchError(error => {
           const message = `Retrieval error: ${error}`;
-          console.error(message);
           return of({ product: null, error: message });
         })
       );

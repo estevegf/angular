@@ -10,7 +10,7 @@ import { EducationResolved } from '../../core/models/Education';
 })
 export class BaseeducationComponent implements OnInit {
   education: EducationResolved;
-  educationBanner = '/assets/banner_education.jpg';
+  educationBanner = '/assets/banner_education-1920.webp';
 
   constructor(private route: ActivatedRoute, private titleService: Title ) {
     this.titleService.setTitle('Education - Angular');
