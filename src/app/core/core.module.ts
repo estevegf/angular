@@ -6,11 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from './services/api.service';
 import { EducationResolver } from './services/education.resolver';
 import { BannerComponent } from './banner/banner.component';
+import { LazyLoadDirective } from './directives/lazyLoad.directive';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    BannerComponent
+    BannerComponent,
+    LazyLoadDirective
   ],
   imports: [
     RouterModule,
@@ -19,7 +21,8 @@ import { BannerComponent } from './banner/banner.component';
   ],
   exports: [
     HeaderComponent,
-    BannerComponent
+    BannerComponent,
+    LazyLoadDirective
   ],
   providers: []
 })
